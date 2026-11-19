@@ -1,6 +1,9 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -11,6 +14,8 @@ namespace projetoJogo_devsKnights
     {
         public List<Bullet> Balas { get; set; } = new List<Bullet>();
 
+
+        public int Velocidade{get;set;} = 10;
         public Player()
         {
             Size = new Size(200, 200);
@@ -23,6 +28,50 @@ namespace projetoJogo_devsKnights
             );
 
             Image = Image.FromFile(caminhoImagem);
+        }
+
+            
+            
+        
+        public void Mover(Keys tecla, int larguraTela, int alturaTela)
+        {
+           if (tecla == Keys.W || tecla == Keys.Up)
+            {
+                Top -= Velocidade;
+
+                if (Top+Height < 0)
+                {
+                    Top = alturaTela;
+                }
+            }
+
+            else if (tecla == Keys.A || tecla == Keys.Left)
+            {
+                Left -= Velocidade;
+                if (Left+Width < 0)
+                {
+                    Left = larguraTela;
+                }
+            }
+
+            else if (tecla == Keys.S || tecla == Keys.Down)
+            {
+                Top += Velocidade;
+                if (Top > alturaTela)
+                {
+                    Top = -Height;
+                }
+            }
+
+            else if(tecla == Keys.D || tecla == Keys.Right)
+            {
+                Left += Velocidade;
+
+                if(Left > larguraTela)
+                {
+                    Left = -Width;
+                }
+            }
         }
 
         public Bullet Atirar()

@@ -24,11 +24,12 @@ namespace projetoJogo_devsKnights
             jogador = new Player();
             jogador.Location = new Point(50, 340);
             Controls.Add(jogador);
-
         }
 
         private void Game_KeyDown(object sender, KeyEventArgs e)
         {
+            jogador.Mover(e.KeyCode, ClientSize.Width, ClientSize.Height);
+
             if (e.KeyCode == Keys.Space)
             {
                 Bullet bala = jogador.Atirar();

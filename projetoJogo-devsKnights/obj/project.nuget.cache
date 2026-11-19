@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jOg5CPRh4yI=",
+  "dgSpecHash": "znuniM866BI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\Downloads\\Projeto-Jogo-main\\Projeto-Jogo-main\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\katia\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.34\\microsoft.netcore.app.ref.8.0.34.nupkg.sha512",
+    "C:\\Users\\katia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.34\\microsoft.windowsdesktop.app.ref.8.0.34.nupkg.sha512",
+    "C:\\Users\\katia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.34\\microsoft.aspnetcore.app.ref.8.0.34.nupkg.sha512",
+    "C:\\Users\\katia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.34\\microsoft.netcore.app.host.win-x64.8.0.34.nupkg.sha512"
+  ],
   "logs": []
 }

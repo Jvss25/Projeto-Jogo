@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Downloads\\Projeto-Jogo-main\\Projeto-Jogo-main\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {}
+    "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Downloads\\Projeto-Jogo-main\\Projeto-Jogo-main\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {
+    "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Downloads\\Projeto-Jogo-main\\Projeto-Jogo-main\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+        "projectUniqueName": "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
         "projectName": "projetoJogo-devsKnights",
-        "projectPath": "C:\\Users\\gabri\\Downloads\\Projeto-Jogo-main\\Projeto-Jogo-main\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Downloads\\Projeto-Jogo-main\\Projeto-Jogo-main\\projetoJogo-devsKnights\\obj\\",
+        "projectPath": "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+        "packagesPath": "C:\\Users\\katia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\katia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net8.0-windows": {
@@ -62,6 +56,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -70,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
