@@ -16,6 +16,7 @@ namespace projetoJogo_devsKnights
 
 
         public int Velocidade{get;set;} = 10;
+        public int Vida { get; set; } = 10;
         public Player()
         {
             Size = new Size(200, 200);
