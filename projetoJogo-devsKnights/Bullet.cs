@@ -20,6 +20,7 @@ namespace projetoJogo_devsKnights
                 "bullet.png"
             );
             Image = Image.FromFile(caminhoImagem);
+            BackColor = Color.Transparent;
             Left = x;
             Top = y;
         }
