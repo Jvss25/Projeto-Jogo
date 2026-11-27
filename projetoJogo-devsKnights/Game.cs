@@ -19,7 +19,7 @@ namespace projetoJogo_devsKnights
 
             iniciarJogo();
 
-            
+
             KeyPreview = true;
             KeyDown += Game_KeyDown;
 
@@ -30,13 +30,12 @@ namespace projetoJogo_devsKnights
             jogador = new Player();
             jogador.Location = new Point(50, 340);
             Controls.Add(jogador);
-            string vida = jogador.vida.ToString();
-            string points = jogador.points.ToString();
-            TxtVida.Text = vida;
-            TxtPoints.Text = points;
+
+            TxtVida.Text = jogador.Vida.ToString();
+            TxtPoints.Text = jogador.Points.ToString();
         }
 
-        
+
 
         private void Game_KeyDown(object sender, KeyEventArgs e)
         {
@@ -56,9 +55,9 @@ namespace projetoJogo_devsKnights
 
             Enemy inimigo;
 
-            if (random.Next(0,100)< 30)
+            if (random.Next(0, 100) < 30)
             {
-                inimigo = new EnemyRapido(x,y);
+                inimigo = new EnemyRapido(x, y);
             }
             else
             {
@@ -101,7 +100,7 @@ namespace projetoJogo_devsKnights
                 contadorSpawn = 0;
             }
 
-            for (int i= inimigos.Count - 1; i >= 0; i--)
+            for (int i = inimigos.Count - 1; i >= 0; i--)
             {
                 Enemy inimigo = inimigos[i];
                 inimigo.Mover();
@@ -119,29 +118,36 @@ namespace projetoJogo_devsKnights
                     {
                         inimigo.ReceberDano();
                         RemoverDisparo(disparo);
+                        if (inimigo.Vida <= 0)
+                        {
+                            jogador.Points++;
+                            TxtPoints.Text = jogador.Points.ToString();
+                        }
                         break;
                     }
                 }
-                
+
                 if (inimigo.EstaMorto())
                 {
                     RemoverInimigo(inimigo);
                     continue;
                 }
 
-                if (inimigo.Bounds.IntersectsWith(inimigo.Bounds))
+                if (jogador.Bounds.IntersectsWith(inimigo.Bounds))
                 {
                     jogador.Vida--;
+                    TxtVida.Text = jogador.Vida.ToString();
                     RemoverInimigo(inimigo);
 
                     if (jogador.Vida <= 0)
                     {
                         timer1.Stop();
-                        MessageBox.Show("Game Over");
+                        Gameover gameover = new Gameover();
+                        gameover.Show();
+                        this.Hide();
                     }
                 }
             }
         }
-
     }
 }

@@ -15,10 +15,9 @@ namespace projetoJogo_devsKnights
     {
         public List<Bullet> Balas { get; set; } = new List<Bullet>();
 
-        public int vida { get; set; } = 3;
-        public int points { get; set; } = 0;
+        public int Points { get; set; } = 0;
 
-        public int Velocidade{get;set;} = 10;
+        public int Velocidade{get;set;} = 20;
         public int Vida { get; set; } = 10;
         public Player()
         {
@@ -77,13 +76,6 @@ namespace projetoJogo_devsKnights
                 {
                     Left = -Width;
                 }
-            }
-
-           if(tecla == Keys.F)
-            {
-                Gameover telapoints = new Gameover();
-                telapoints.Show();
-                this.Hide();
             }
         }
 

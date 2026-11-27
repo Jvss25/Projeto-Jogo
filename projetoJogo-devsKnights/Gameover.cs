@@ -19,6 +19,15 @@ namespace projetoJogo_devsKnights
 
         private void btn_jogarNovamente_Click(object sender, EventArgs e)
         {
+            Game game = new Game();
+            game.Show();
+            this.Hide();
+        }
+
+      
+
+        private void btn_inicio_Click(object sender, EventArgs e)
+        {
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();

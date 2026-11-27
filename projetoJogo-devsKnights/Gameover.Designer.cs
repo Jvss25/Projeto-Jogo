@@ -30,6 +30,7 @@
         {
             TxtTitulo = new Label();
             btn_jogarNovamente = new Button();
+            btn_inicio = new Button();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -49,7 +50,7 @@
             btn_jogarNovamente.BackColor = Color.SeaGreen;
             btn_jogarNovamente.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_jogarNovamente.ForeColor = Color.White;
-            btn_jogarNovamente.Location = new Point(720, 642);
+            btn_jogarNovamente.Location = new Point(720, 678);
             btn_jogarNovamente.Name = "btn_jogarNovamente";
             btn_jogarNovamente.Size = new Size(523, 68);
             btn_jogarNovamente.TabIndex = 1;
@@ -57,11 +58,25 @@
             btn_jogarNovamente.UseVisualStyleBackColor = false;
             btn_jogarNovamente.Click += btn_jogarNovamente_Click;
             // 
+            // btn_inicio
+            // 
+            btn_inicio.BackColor = Color.SeaGreen;
+            btn_inicio.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_inicio.ForeColor = Color.White;
+            btn_inicio.Location = new Point(720, 575);
+            btn_inicio.Name = "btn_inicio";
+            btn_inicio.Size = new Size(523, 68);
+            btn_inicio.TabIndex = 2;
+            btn_inicio.Text = "Voltar ao Inicío";
+            btn_inicio.UseVisualStyleBackColor = false;
+            btn_inicio.Click += btn_inicio_Click;
+            // 
             // Gameover
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1899, 1023);
+            Controls.Add(btn_inicio);
             Controls.Add(btn_jogarNovamente);
             Controls.Add(TxtTitulo);
             Name = "Gameover";
@@ -74,5 +89,6 @@
 
         private Label TxtTitulo;
         private Button btn_jogarNovamente;
+        private Button btn_inicio;
     }
 }
