@@ -9,16 +9,12 @@ namespace projetoJogo_devsKnights
 {
     public class EnemyRapido : Enemy
     {
-        private int direcaoVertical = 1;
-        public EnemyRapido(int x, int y): base(x, y) 
+
+        private int direcaoVertical = 1; 
+        public EnemyRapido(int x, int y): base(x, y, "harpia.png") 
         {
-            String caminhoImagem = Path.Combine(
-                Application.StartupPath,
-                "assets",
-                "onca.png"
-                );
-            
-            Velocidade = 14;
+
+            Velocidade = 10;
             Vida = 1;
             Size = new Size(70, 70);
         }

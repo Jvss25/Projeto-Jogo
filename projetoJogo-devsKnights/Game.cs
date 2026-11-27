@@ -65,7 +65,25 @@ namespace projetoJogo_devsKnights
             }
             if(jogador.Points >= 10)
             {
-                inimigo.Velocidade *= 2;
+                inimigo.Velocidade += 5;
+            }
+            else if (jogador.Points >= 20)
+            {
+                inimigo.Velocidade += 5;
+
+            }
+            else if (jogador.Points >= 30)
+            {
+                inimigo.Velocidade += 5;
+
+            }
+            else if (jogador.Points >= 40)
+            {
+                inimigo.Velocidade += 5;
+            }
+            else if (jogador.Points >= 50)
+            {
+                inimigo.Velocidade += 5;
             }
             inimigos.Add(inimigo);
             Controls.Add(inimigo);

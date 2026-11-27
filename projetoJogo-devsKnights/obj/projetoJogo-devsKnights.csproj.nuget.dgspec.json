@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {}
+    "C:\\Users\\gabri\\OneDrive\\Documentos\\capivaraNoJutsu\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {}
   },
   "projects": {
-    "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Documentos\\capivaraNoJutsu\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documentos\\capivaraNoJutsu\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
         "projectName": "projetoJogo-devsKnights",
-        "projectPath": "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
-        "packagesPath": "C:\\Users\\20252930048.E293-ACAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\obj\\",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documentos\\capivaraNoJutsu\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documentos\\capivaraNoJutsu\\projetoJogo-devsKnights\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\20252930048.E293-ACAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,11 +26,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
             "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
@@ -44,10 +44,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
-        "net8.0-windows7.0": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
           "targetAlias": "net8.0-windows",
           "imports": [
             "net461",
@@ -68,7 +70,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

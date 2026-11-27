@@ -12,18 +12,22 @@ namespace projetoJogo_devsKnights
 {
     public class Enemy : PictureBox
     {
-        public int Velocidade { get; set; } = 7;
+        public int Velocidade { get; set; } = 5;
         public int Vida { get; set; } = 3;
 
-        public Enemy(int x, int y)
+        public Enemy(int x, int y, string imagem)
         {
-            Size = new Size(100, 100);
+            string caminhoImagem = Path.Combine(
+              Application.StartupPath,
+              "assets",
+              imagem
+          );
+
+            Image = Image.FromFile(caminhoImagem);
+
+            Location = new Point(x, y);
             SizeMode = PictureBoxSizeMode.StretchImage;
-            String caminhoImagem = Path.Combine(
-                Application.StartupPath,
-                "assets",
-                "harpia.png"
-                );
+
             if (File.Exists(caminhoImagem))
             {
                 Image = Image.FromFile(caminhoImagem);
@@ -35,6 +39,11 @@ namespace projetoJogo_devsKnights
             }
             Left = x;
             Top = y;
+        }
+
+        public Enemy(int x, int y) : this(x, y, "onca.png")
+        {
+            Size = new Size(130, 100);
         }
 
         public virtual void Mover()
