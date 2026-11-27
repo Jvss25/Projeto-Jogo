@@ -7,6 +7,9 @@ namespace projetoJogo_devsKnights
     public partial class Game : Form
     {
         private Player jogador;
+        private List<Enemy> inimigos = new List<Enemy>();
+        private Random random = new Random();
+        private int contadorSpawn = 0;
 
         public Game()
         {
@@ -46,23 +49,99 @@ namespace projetoJogo_devsKnights
             }
         }
 
+        private void CriarInimigo()
+        {
+            int x = ClientSize.Width;
+            int y = random.Next(0, ClientSize.Height - 100);
+
+            Enemy inimigo;
+
+            if (random.Next(0,100)< 30)
+            {
+                inimigo = new EnemyRapido(x,y);
+            }
+            else
+            {
+                inimigo = new Enemy(x, y);
+            }
+            inimigos.Add(inimigo);
+            Controls.Add(inimigo);
+        }
+
+        private void RemoverInimigo(Enemy inimigo)
+        {
+            Controls.Remove(inimigo);
+            inimigos.Remove(inimigo);
+            inimigo.Dispose();
+        }
+
+        private void RemoverDisparo(Bullet disparo)
+        {
+            Controls.Remove(disparo);
+            jogador.Balas.Remove(disparo);
+            disparo.Dispose();
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             for (int i = jogador.Balas.Count - 1; i >= 0; i--)
             {
-                Bullet bala = jogador.Balas[i];
+                Bullet disparo = jogador.Balas[i];
 
-                bala.Mover();
+                disparo.Mover();
 
-                if (bala.SaiuDaTela())
+                if (disparo.SaiuDaTela())
                 {
-                    Controls.Remove(bala);
+                    RemoverDisparo(disparo);
+                }
+            }
+            contadorSpawn++;
+            if (contadorSpawn >= 50)
+            {
+                CriarInimigo();
+                contadorSpawn = 0;
+            }
 
-                    jogador.Balas.RemoveAt(i);
+            for (int i= inimigos.Count - 1; i >= 0; i--)
+            {
+                Enemy inimigo = inimigos[i];
+                inimigo.Mover();
 
-                    bala.Dispose();
+                if (inimigo.SaiuDaTela())
+                {
+                    RemoverInimigo(inimigo);
+                    continue;
+                }
+
+                for (int j = jogador.Balas.Count - 1; j >= 0; j--)
+                {
+                    Bullet disparo = jogador.Balas[j];
+                    if (disparo.Bounds.IntersectsWith(inimigo.Bounds))
+                    {
+                        inimigo.ReceberDano();
+                        RemoverDisparo(disparo);
+                        break;
+                    }
+                }
+                
+                if (inimigo.EstaMorto())
+                {
+                    RemoverInimigo(inimigo);
+                    continue;
+                }
+
+                if (jogador.Bounds.IntersectsWith(inimigo.Bounds))
+                {
+                    jogador.Vida--;
+                    RemoverInimigo(inimigo);
+
+                    if (jogador.Vida <= 0)
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Game Over");
+                    }
                 }
             }
         }
+
     }
 }
