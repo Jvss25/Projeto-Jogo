@@ -12,8 +12,11 @@ namespace projetoJogo_devsKnights
         {
             InitializeComponent();
 
+            DoubleBuffered = true;
+
             iniciarJogo();
 
+            
             KeyPreview = true;
             KeyDown += Game_KeyDown;
 
@@ -24,7 +27,13 @@ namespace projetoJogo_devsKnights
             jogador = new Player();
             jogador.Location = new Point(50, 340);
             Controls.Add(jogador);
+            string vida = jogador.vida.ToString();
+            string points = jogador.points.ToString();
+            TxtVida.Text = vida;
+            TxtPoints.Text = points;
         }
+
+        
 
         private void Game_KeyDown(object sender, KeyEventArgs e)
         {
