@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
 
 namespace projetoJogo_devsKnights
 {
@@ -14,11 +15,14 @@ namespace projetoJogo_devsKnights
     {
         public List<Bullet> Balas { get; set; } = new List<Bullet>();
 
+        public int vida { get; set; } = 3;
+        public int points { get; set; } = 0;
 
         public int Velocidade{get;set;} = 10;
         public int Vida { get; set; } = 10;
         public Player()
         {
+            
             Size = new Size(200, 200);
             SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -29,6 +33,7 @@ namespace projetoJogo_devsKnights
             );
 
             Image = Image.FromFile(caminhoImagem);
+            BackColor = Color.Transparent;
         }
 
             
@@ -73,8 +78,16 @@ namespace projetoJogo_devsKnights
                     Left = -Width;
                 }
             }
+
+           if(tecla == Keys.F)
+            {
+                Gameover telapoints = new Gameover();
+                telapoints.Show();
+                this.Hide();
+            }
         }
 
+   
         public Bullet Atirar()
         {
             Bullet bala = new Bullet(
@@ -84,6 +97,7 @@ namespace projetoJogo_devsKnights
 
             Balas.Add(bala);
             return bala;
+
         }
     }
 }

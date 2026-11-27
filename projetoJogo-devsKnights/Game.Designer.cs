@@ -31,33 +31,60 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             timer1 = new System.Windows.Forms.Timer(components);
+            TxtVida = new Label();
+            TxtPoints = new Label();
             SuspendLayout();
             // 
             // timer1
             // 
             timer1.Enabled = true;
-            timer1.Interval = 50;
+            timer1.Interval = 20;
             timer1.Tick += timer1_Tick;
+            // 
+            // TxtVida
+            // 
+            TxtVida.AutoSize = true;
+            TxtVida.BackColor = Color.Transparent;
+            TxtVida.Font = new Font("Showcard Gothic", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TxtVida.Location = new Point(175, 19);
+            TxtVida.Name = "TxtVida";
+            TxtVida.Size = new Size(33, 35);
+            TxtVida.TabIndex = 1;
+            TxtVida.Text = "0";
+            // 
+            // TxtPoints
+            // 
+            TxtPoints.AutoSize = true;
+            TxtPoints.BackColor = Color.Transparent;
+            TxtPoints.Font = new Font("Showcard Gothic", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TxtPoints.Location = new Point(175, 84);
+            TxtPoints.Name = "TxtPoints";
+            TxtPoints.Size = new Size(33, 35);
+            TxtPoints.TabIndex = 2;
+            TxtPoints.Text = "0";
             // 
             // Game
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1329, 614);
+            ClientSize = new Size(1899, 1023);
+            Controls.Add(TxtPoints);
+            Controls.Add(TxtVida);
+            ForeColor = Color.Transparent;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(2);
             Name = "Game";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Jogo";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private Label TxtVida;
+        private Label TxtPoints;
     }
 }

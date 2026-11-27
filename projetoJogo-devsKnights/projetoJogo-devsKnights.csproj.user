@@ -19,5 +19,8 @@
     <Compile Update="Player.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Gameover.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

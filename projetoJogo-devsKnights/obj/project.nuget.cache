@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "DPa6OlQNJb8=",
   "success": true,
   "projectFilePath": "C:\\Users\\20252930041\\Source\\Repos\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+=======
+  "dgSpecHash": "NzLc0aZkBi4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+>>>>>>> c370e57c97524d483bd45627f34252fe58fbe0e3
   "expectedPackageFiles": [],
   "logs": []
 }
