@@ -66,25 +66,25 @@ namespace projetoJogo_devsKnights
             }
             if(jogador.Points >= 10)
             {
-                inimigo.Velocidade += 5;
+                inimigo.Velocidade += 2;
             }
             else if (jogador.Points >= 20)
             {
-                inimigo.Velocidade += 5;
+                inimigo.Velocidade += 2;
 
             }
             else if (jogador.Points >= 30)
             {
-                inimigo.Velocidade += 5;
+                inimigo.Velocidade += 2;
 
             }
             else if (jogador.Points >= 40)
             {
-                inimigo.Velocidade += 5;
+                inimigo.Velocidade += 2;
             }
             else if (jogador.Points >= 50)
             {
-                inimigo.Velocidade += 5;
+                inimigo.Velocidade += 2;
             }
             inimigos.Add(inimigo);
             Controls.Add(inimigo);
@@ -194,7 +194,7 @@ namespace projetoJogo_devsKnights
                         gameover.Show();
                         this.Hide();
                     }
-                    if (jogador.Points >= 50)
+                    if (jogador.Points == 50)
                     {
                         timer1.Stop();
                         Vitoria vitoria = new Vitoria();
