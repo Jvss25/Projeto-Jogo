@@ -22,7 +22,7 @@ namespace projetoJogo_devsKnights
 
             KeyPreview = true;
             KeyDown += Game_KeyDown;
-
+            
         }
 
         public void iniciarJogo()
@@ -62,6 +62,10 @@ namespace projetoJogo_devsKnights
             else
             {
                 inimigo = new Enemy(x, y);
+            }
+            if(jogador.Points >= 10)
+            {
+                inimigo.Velocidade *= 2;
             }
             inimigos.Add(inimigo);
             Controls.Add(inimigo);
@@ -146,8 +150,12 @@ namespace projetoJogo_devsKnights
                         gameover.Show();
                         this.Hide();
                     }
+             
+                
                 }
             }
+
+
         }
     }
 }

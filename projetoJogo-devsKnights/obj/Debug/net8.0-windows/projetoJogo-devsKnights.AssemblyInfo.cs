@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("projetoJogo-devsKnights")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5c0cb6dbae4e2b523a3d1cec92b6683414f5713")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3512a4f4f2a7223dc6cc6c5d2df9b89a83aaebe")]
 [assembly: System.Reflection.AssemblyProductAttribute("projetoJogo-devsKnights")]
 [assembly: System.Reflection.AssemblyTitleAttribute("projetoJogo-devsKnights")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
