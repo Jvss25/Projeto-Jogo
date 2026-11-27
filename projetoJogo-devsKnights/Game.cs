@@ -33,6 +33,7 @@ namespace projetoJogo_devsKnights
 
             TxtVida.Text = jogador.Vida.ToString();
             TxtPoints.Text = jogador.Points.ToString();
+            
         }
 
 
@@ -144,6 +145,31 @@ namespace projetoJogo_devsKnights
                         {
                             jogador.Points++;
                             TxtPoints.Text = jogador.Points.ToString();
+                            if (jogador.Points >= 10)
+                            {
+                                jogador.Vida += 1;
+                                TxtVida.Text = jogador.Vida.ToString();
+                            }
+                            else if (jogador.Points >= 20)
+                            {
+                                jogador.Vida += 1;
+                                TxtVida.Text = jogador.Vida.ToString();
+                            }
+                            else if (jogador.Points >= 30)
+                            {
+                                jogador.Vida += 1;
+                                TxtVida.Text = jogador.Vida.ToString();
+                            }
+                            else if (jogador.Points >= 40)
+                            {
+                                jogador.Vida += 1;
+                                TxtVida.Text = jogador.Vida.ToString();
+                            }
+                            else if (jogador.Points >= 50)
+                            {
+                                jogador.Vida += 1;
+                                TxtVida.Text = jogador.Vida.ToString();
+                            }
                         }
                         break;
                     }
@@ -168,8 +194,14 @@ namespace projetoJogo_devsKnights
                         gameover.Show();
                         this.Hide();
                     }
-             
-                
+                    if (jogador.Points >= 50)
+                    {
+                        timer1.Stop();
+                        Vitoria vitoria = new Vitoria();
+                        vitoria.Show();
+                        this.Hide();
+                    }
+
                 }
             }
 

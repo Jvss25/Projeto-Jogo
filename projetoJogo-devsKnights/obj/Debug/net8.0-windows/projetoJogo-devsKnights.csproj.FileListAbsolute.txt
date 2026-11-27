@@ -43,3 +43,4 @@ C:\Users\gabri\OneDrive\Documentos\capivaraNoJutsu\projetoJogo-devsKnights\obj\D
 C:\Users\gabri\OneDrive\Documentos\capivaraNoJutsu\projetoJogo-devsKnights\obj\Debug\net8.0-windows\projetoJogo-devsKnights.genruntimeconfig.cache
 C:\Users\gabri\OneDrive\Documentos\capivaraNoJutsu\projetoJogo-devsKnights\obj\Debug\net8.0-windows\ref\projetoJogo-devsKnights.dll
 C:\Users\gabri\OneDrive\Documentos\capivaraNoJutsu\projetoJogo-devsKnights\obj\Debug\net8.0-windows\projetoJ.CA09C739.Up2Date
+C:\Users\gabri\OneDrive\Documentos\capivaraNoJutsu\projetoJogo-devsKnights\obj\Debug\net8.0-windows\projetoJogo_devsKnights.Vitoria.resources

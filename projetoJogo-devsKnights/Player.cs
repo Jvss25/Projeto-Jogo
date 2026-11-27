@@ -15,7 +15,7 @@ namespace projetoJogo_devsKnights
     {
         public List<Bullet> Balas { get; set; } = new List<Bullet>();
 
-        public int Points { get; set; } = 0;
+        public int Points { get; set; } = 48;
 
         public int Velocidade{get;set;} = 20;
         public int Vida { get; set; } = 10;
