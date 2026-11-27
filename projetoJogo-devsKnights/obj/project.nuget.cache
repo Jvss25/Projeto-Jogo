@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "znuniM866BI=",
+<<<<<<< HEAD
+  "dgSpecHash": "DPa6OlQNJb8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\katia\\OneDrive\\Documentos\\teste\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\katia\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.34\\microsoft.netcore.app.ref.8.0.34.nupkg.sha512",
-    "C:\\Users\\katia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.34\\microsoft.windowsdesktop.app.ref.8.0.34.nupkg.sha512",
-    "C:\\Users\\katia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.34\\microsoft.aspnetcore.app.ref.8.0.34.nupkg.sha512",
-    "C:\\Users\\katia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.34\\microsoft.netcore.app.host.win-x64.8.0.34.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\20252930041\\Source\\Repos\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+=======
+  "dgSpecHash": "NzLc0aZkBi4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\20252930048.E293-ACAD\\source\\repos\\Jvss25\\Projeto-Jogo\\projetoJogo-devsKnights\\projetoJogo-devsKnights.csproj",
+>>>>>>> c370e57c97524d483bd45627f34252fe58fbe0e3
+  "expectedPackageFiles": [],
   "logs": []
 }
